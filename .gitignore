@@ -1,0 +1,12 @@
+# Dependencies - usually you don't want to save the multitude of files npm may contain. There are exceptions
+node_modules/
+
+#Enviroment - may contain passwords, API keys, and other sensitive information
+.env
+
+# OS files -  system-specific fiels that are not useful outside the OS context and shouldn't be shared
+.DS_Store
+Thumb.db
+
+# Logs - watch out for info disclosure via logs
+*.log
