@@ -1,0 +1,13 @@
+{
+  "name": "lab2-git-javascript",
+  "version": "0.1.0",
+  "description": "A collection of JavaScript utility functions demonstrating Git workflows\r and Node.js module patterns.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "author": "Evan Lackey",
+  "license": "MIT"
+}
