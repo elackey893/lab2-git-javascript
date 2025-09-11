@@ -1,8 +1,23 @@
 // math utility functions
 
+/**
+* function add - a stupid function
+*
+* @param a
+* @param b
+* @returns {*}
+ */
+
 function add(a, b) {
-    return a + b;
+    return a + b; //adds 2 numbers
 }
+
+/**
+ *
+ * @param a
+ * @param b
+ * @returns {number}
+ */
 
 function subtract(a, b) {
     return a - b;
