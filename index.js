@@ -6,7 +6,7 @@
 
 // Import math functions
 import * as math from './math.js';
-import * as strings from './string.js'
+import * as strings from './strings.js';
 import {isPalindrome} from "./strings.js";
 
 console.log('=== Testing Math Module ===');
