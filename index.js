@@ -7,7 +7,7 @@
 // Import math functions
 import * as math from './math.js';
 import * as strings from './strings.js';
-import {isPalindrome} from "./strings.js";
+import * as arrays from './arrays.js';
 
 console.log('=== Testing Math Module ===');
 console.log('add(5,3) = ', math.add(5,3));
@@ -27,3 +27,17 @@ console.log('capitalize("javascript") =', strings.capitalize("javascript"));
 console.log('countVowels("hello world") =', strings.countVowels("hello world"));
 console.log('isPalindrome("racecar") =', strings.isPalindrome('racecar'));
 console.log('isPalindrome("hello")=', strings.isPalindrome("hello"));
+
+//arrays.js testing
+
+console.log('\n==== Testing arrays Module ===');
+const testArray = [1, 2, 3, 4, 5, 6];
+const duplicateArray = [1, 2, 2, 3, 3, 4];
+console.log('testArray = ', testArray);
+console.log('sum =', arrays.sum(testArray));
+console.log('average =', arrays.average(testArray));
+console.log('filterEven =', arrays.filterEven(testArray));
+console.log('filterOdd =', arrays.filterOdd(testArray));
+console.log('\nArray with duplicates:', duplicateArray);
+console.log('removeDuplicates =', arrays.removeDuplicates(duplicateArray));
+
