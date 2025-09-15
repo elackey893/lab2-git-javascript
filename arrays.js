@@ -15,3 +15,15 @@ export function sum(arr) {
     }
     return arr.reduce((acc, num) => acc + num, 0);
 }
+
+/**
+ * calculate average of array
+ * @param {number[]} arr - Array of numbers
+ * @returns {number} Average value
+ */
+export function average(arr) {
+    if (!Array.isArray(arr) || arr.length === 0) {
+        throw new Error('Not an array or an empty array');
+    }
+    return sum(arr) / arr.length;
+}
