@@ -15,7 +15,7 @@
 * @returns {number} - sum of a and b
  */
 
-function add(a, b){
+export function add(a, b){
     if (typeof a !== "number" || typeof b !== "number") {
         throw new Error("Not a number");
     }
@@ -29,7 +29,7 @@ function add(a, b){
  * @returns {number} difference of a and b
  */
 
-function subtract(a, b) {
+export function subtract(a, b) {
     return a - b;
 }
 
@@ -41,7 +41,7 @@ function subtract(a, b) {
  * @returns {number} product of a and b
  */
 
-function multiply(a, b) {
+export function multiply(a, b) {
     return a * b;
 }
 
@@ -54,7 +54,7 @@ function multiply(a, b) {
  * @throws {Error} if b is zero
  */
 
-function divide(a, b) {
+export function divide(a, b) {
     if (b === 0){
         throw new Error ('Cannot divide by zero');
     }
@@ -69,7 +69,7 @@ function divide(a, b) {
  * @returns {number} base raised to exponent
  */
 
-function power(base, exponent) {
+export function power(base, exponent) {
     return Math.pow(base, exponent);
 }
 
@@ -81,7 +81,7 @@ function power(base, exponent) {
  * @throws {Error} if n is negative
  */
 
-function sqrt(n){
+export function sqrt(n){
     if (n < 0){
         throw new Error ('Cannot sqrt of negative numbers');
     }
@@ -96,7 +96,7 @@ function sqrt(n){
  * @throws {Error} if n is negative
  */
 
-function factorial(n) {
+export function factorial(n) {
     if (n < 0){
         throw new Error ('Cannot factor a negative numbers');
     }
