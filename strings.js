@@ -11,7 +11,10 @@
  */
 
 export function reverse(str) {
-    return 'stubbed';
+    if (typeof str !== 'string') {
+        throw new Error ('Cannot reverse non-strings');
+    }
+    return str.split('').reverse().join('');
 }
 
 /**
