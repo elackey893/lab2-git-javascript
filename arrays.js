@@ -27,3 +27,15 @@ export function average(arr) {
     }
     return sum(arr) / arr.length;
 }
+
+/**
+ * Filter even numbers
+ * @param {number[]} arr - Array of numbers
+ * @returns {number[]} Array of even numbers
+ */
+export function filterEven(arr) {
+    if (!Array.isArray(arr)) {
+        throw new Error('Input must be an array');
+    }
+    return arr.filter(num => num % 2 === 0);
+}
