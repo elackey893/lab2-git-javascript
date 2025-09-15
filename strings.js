@@ -24,7 +24,11 @@ export function reverse(str) {
  */
 
 export function capitalize(str) {
-    return 'stubbed';
+    if (typeof str !== 'string') {
+        throw new Error ('Cannot capitalize non-strings');
+    }
+    if (str.length ===0) return '0';
+    return str[0].toUpperCase() + str.slice(1).toLowerCase();
 }
 
 /**
