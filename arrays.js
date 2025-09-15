@@ -39,3 +39,27 @@ export function filterEven(arr) {
     }
     return arr.filter(num => num % 2 === 0);
 }
+
+/**
+ * Filter odd numbers
+ * @param {number[]} arr - Array of numbers
+ * @returns {number[]} Array of odd numbers
+ */
+export function  filterOdd(arr) {
+    if (!Array.isArray(arr)) {
+        throw new Error('Input must be an array');
+    }
+    return arr.filter(num => num % 2 !== 0);
+}
+
+/**
+ * Remove duplicates values
+ * @param {Array} arr - Array with possible duplicates
+ * @returns {Array} Array with unique values
+ */
+export function removeDuplicates(arr) {
+    if (!Array.isArray(arr)) {
+        throw new Error('Input must be an array');
+        }
+        return [...new Set(arr)];
+    }
