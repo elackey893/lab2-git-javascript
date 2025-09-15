@@ -1,11 +1,18 @@
 // math utility functions
+/**
+ *  Math utilities for learning purposes
+ *  @file 'math.js'
+ *  @author 'Evan Lackey'
+ */
+
+
 
 /**
-* function add - a stupid function
+* function add two numbers
 *
-* @param a
-* @param b
-* @returns {*}
+* @param  {number} a - first number
+* @param {number} b - second number
+* @returns {number} - sum of a and b
  */
 
 function add(a, b){
@@ -15,19 +22,37 @@ function add(a, b){
     return a + b; //adds 2 numbers
 }
 /**
+ * subtract two numbers
  *
- * @param a
- * @param b
- * @returns {number}
+ * @param {number} a
+ * @param {number} b
+ * @returns {number} difference of a and b
  */
 
 function subtract(a, b) {
     return a - b;
 }
 
+/**
+ * multiplies two numbers
+ *
+ * @param {number} a
+ * @param {number} b
+ * @returns {number} product of a and b
+ */
+
 function multiply(a, b) {
     return a * b;
 }
+
+/**
+ * divides two numbers
+ *
+ * @param {number} a
+ * @param {number} b
+ * @returns {number} quotient of a and b
+ * @throws {Error} if b is zero
+ */
 
 function divide(a, b) {
     if (b === 0){
@@ -36,9 +61,25 @@ function divide(a, b) {
     return a / b;
 }
 
+/**
+ * power of two numbers
+ *
+ * @param {number} base - base
+ * @param {number} exponent - exponent
+ * @returns {number} base raised to exponent
+ */
+
 function power(base, exponent) {
     return Math.pow(base, exponent);
 }
+
+/**
+ * calculates square root
+ *
+ * @param {number} n
+ * @returns {number} Square root
+ * @throws {Error} if n is negative
+ */
 
 function sqrt(n){
     if (n < 0){
@@ -46,6 +87,14 @@ function sqrt(n){
     }
     return Math.sqrt(n);
 }
+
+/**
+ * calculates factorial
+ *
+ * @param {number} n
+ * @returns {number} Factorial of n
+ * @throws {Error} if n is negative
+ */
 
 function factorial(n) {
     if (n < 0){
@@ -58,14 +107,3 @@ function factorial(n) {
     }
     return result;
 }
-
-// test the functions with console log
-console.log('testing math functions');
-console.log('add(5,3) = ',add(5,3));
-console.log('subtract(10,4)=',subtract(10,4));
-console.log('multiply(3,7) =',multiply(3,7));
-console.log('divide(20,4) =', divide(20,4));
-// console.log('divide(3,0) =',divide(3,0));
-console.log('power(2,8) =', power(2,8));
-console.log('sqrt(16) =',sqrt(16));
-console.log('factorial(5) =', factorial(5));
