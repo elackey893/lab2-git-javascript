@@ -38,7 +38,17 @@ export function capitalize(str) {
  */
 
 export function countVowels(str) {
-    return 'stubbed';
+    if (typeof str !== 'string') {
+        throw new Error ('Cannot count vowels non-strings');
+    }
+    const vowels = 'aeiouAeEIOU';
+    let count = 0;
+    for (let char of str) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
 }
 
 /**
