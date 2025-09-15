@@ -58,6 +58,11 @@ export function countVowels(str) {
  */
 
 export function isPalindrome(str) {
-    return 'stubbed';
+    if (typeof str !== 'string') {
+        throw new Error ('Cannot be a palindrome if not a string');
+    }
+    const cleaned = str.replace(/|s/g, '').toLowerCase();
+    const reversed = cleaned.split('').reverse().join('');
+    return cleaned === reversed;
 }
 
