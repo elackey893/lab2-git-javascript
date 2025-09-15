@@ -17,9 +17,18 @@ describe('Math Module', () => {
             assert.equal(math.add(5,3), 8);
         });
 
+        it('should subtract two numbers correctly', () => {
+            assert.equal(math.subtract(5,3), 2);
+        })
+
         it('should throw error when dividing by zero', () =>{
             assert.throws(() => math.divide(10,0), /Cannot divide by zero/);
         });
+
+        it('should throw error when adding strings ', () => {
+            assert.throws(() => math.add('two', 'five'), /Add numbers only/);
+        });
+
     });
 
     describe('Advanced operations', () => {
@@ -42,6 +51,11 @@ describe('String Module', () => {
         it('should throw error for non-string input to revers', () => {
             assert.throws(() => strings.reverse(123), /Input must be a string/);
         });
+
+        it('should capitalize the string', () => {
+            assert.equal(strings.capitalize('hello'), 'Hello');
+        });
+
     });
 });
 
@@ -55,6 +69,11 @@ describe('Array Module', () => {
         it('should throw error for empty array average', () => {
             assert.throws(() => arrays.average([]), /Input must be a non-empty array/);
         });
+
+        it('should find average', () => {
+            assert.equal(arrays.average([2,2,2]), 2);
+        });
+
     });
 });
 
