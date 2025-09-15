@@ -10,7 +10,7 @@
  * @returns {string} Reversed string
  */
 
-export function revers(str) {
+export function reverse(str) {
     return 'stubbed';
 }
 
