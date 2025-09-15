@@ -23,7 +23,7 @@ export function sum(arr) {
  */
 export function average(arr) {
     if (!Array.isArray(arr) || arr.length === 0) {
-        throw new Error('Not an array or an empty array');
+        throw new Error('Input must be a non-empty array');
     }
     return sum(arr) / arr.length;
 }

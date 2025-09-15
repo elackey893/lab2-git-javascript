@@ -7,6 +7,8 @@
 
 
 
+import {sum} from "./arrays.js";
+
 /**
 * function add two numbers
 *
@@ -83,7 +85,7 @@ export function power(base, exponent) {
 
 export function sqrt(n){
     if (n < 0){
-        throw new Error ('Cannot sqrt of negative numbers');
+        throw new Error ('Cannot calculate square root of negative number');
     }
     return Math.sqrt(n);
 }
@@ -107,3 +109,6 @@ export function factorial(n) {
     }
     return result;
 }
+
+
+
