@@ -10,3 +10,5 @@ Thumb.db
 
 # Logs - watch out for info disclosure via logs
 *.log
+
+.idea
